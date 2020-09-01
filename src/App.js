@@ -17,6 +17,7 @@ function App() {
           rel="noopener noreferrer"
         >
          Click here to create a category
+         Add the Category container and Issues container
         </a>
       </header>
     </div>
