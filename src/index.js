@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
+import Home from './Home'
 import { BrowserRouter as Router, Route, NavLink} from 'react-router-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
@@ -40,13 +41,13 @@ activeStyle={{
 </div>
 
 
-const Home = () => {
-  return (
-    <div>
-      <h1>Home!</h1>
-    </div>
-  );
-};
+// const Home = () => {
+//   return (
+//     <div>
+//       <h1>Home!</h1>
+//     </div>
+//   );
+// };
 
 const Category = () => {
   return (
