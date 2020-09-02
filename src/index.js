@@ -1,53 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
+import Navbar from './Stateless/Navbar'
 import Home from './Home'
-import { BrowserRouter as Router, Route, NavLink} from 'react-router-dom';
+import { BrowserRouter as Router, Route} from 'react-router-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 
-const link = {
-  width: '100opx',
-  padding: '12px',
-  margin: '0 6px 6px',
-  background: 'blue',
-  textDecoration: 'none',
-  color: 'white',
-}
-
-const Navbar = () => 
-<div> 
-<NavLink
-to ="/"
-exact
-style={link}
-activeStyle={{
-  background:'darkblue'
-}}>Home</NavLink>
-<NavLink
-to="/category"
-exact
-style={link}
-activeStyle={{
-  background:'darkblue'
-}}>Category</NavLink>
-<NavLink
-to="/issue"
-exact
-style={link}
-activeStyle={{
-  background:'darkblue'
-}}>Issue</NavLink>
-</div>
-
-
-// const Home = () => {
-//   return (
-//     <div>
-//       <h1>Home!</h1>
-//     </div>
-//   );
-// };
 
 const Category = () => {
   return (
