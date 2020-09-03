@@ -1,9 +1,9 @@
 import React from 'react';
 
 const CategoryForm = (props) => {
+ 
     return ( 
         <div>
-            {console.log(props)}
         <form onSubmit={event => props.handleSubmit(event)}>
             <input 
             type="text" 

@@ -8,7 +8,7 @@ import CategoryForm from '../Stateless/CategoryForm'
 class Category extends React.Component {
     
     state = {
-        category: []
+        categories: []
     }
 
     // getCategories = () =>{
@@ -22,16 +22,14 @@ class Category extends React.Component {
     getCategories = () =>{
         return fetch("http://localhost:3000/categories")
             .then(res => res.json())
-            .then(categories => this.showCategories(categories))
+            .then(categories =>  this.setState({categories: categories}) )
         }
-showCategories = (categories) =>{
-    console.log(categories)
-    categories.map(category => (
-    <DisplayCategories categoryData={category}/>)
-)
-    debugger;
+// showCategories = (categories) =>{
+//     // console.log(categories)
+//     <DisplayCategories categoryData={categories} />
 
-}
+
+// }
 
     
     handleChange = event => {
@@ -56,7 +54,6 @@ showCategories = (categories) =>{
             <DisplayCategories
             getCategories={this.getCategories}  
             categoryData={this.state}
-            showCategories={this.showCategories}
             />
             <CategoryForm 
             categoryData={this.state}
