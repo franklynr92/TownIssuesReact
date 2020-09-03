@@ -4,6 +4,7 @@ import Category from './Container/Category'
 import Navbar from './Stateless/Navbar'
 import Home from './Home'
 import Issue from './Container/Issue'
+import C from './Redux/constants'
 import { BrowserRouter as Router, Route} from 'react-router-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
