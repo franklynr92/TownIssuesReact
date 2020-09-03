@@ -19,7 +19,7 @@ class Category extends React.Component {
 
     getCategories = () =>{
         return fetch("http://localhost:3000/categories")
-            .then(res => res.json)
+            .then(res => res.json())
             .then(data => console.log(data))
         }
 
