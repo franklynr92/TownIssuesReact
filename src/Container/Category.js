@@ -1,4 +1,6 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import { fetchCategories } from '../Redux/action/actions'
 import DisplayCategories from '../Stateless/DisplayCategories'
 import CategoryForm from '../Stateless/CategoryForm'
 
@@ -52,7 +54,7 @@ class Category extends React.Component {
         <div>
             <h1>This is my Category Component</h1>
             <DisplayCategories
-            getCategories={this.getCategories}  
+            getCategories={this.props.fetchCategories}  
             categoryData={this.state}
             />
             <CategoryForm 
@@ -65,4 +67,17 @@ class Category extends React.Component {
     }
 }
 
-export default Category
+const mapStateToProps = (state) => {
+    return {
+        categories: state.categories
+    }
+}
+
+const mapDispatchToProps = dispatch => {
+    return {
+        fetchCategories: () => dispatch(fetchCategories())
+    }
+}
+
+
+export default connect(mapStateToProps, mapDispatchToProps)(Category)
