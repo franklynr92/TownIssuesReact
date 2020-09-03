@@ -9,9 +9,7 @@ import CategoryForm from '../Stateless/CategoryForm'
 
 class Category extends React.Component {
     
-    state = {
-        categories: []
-    }
+    
 
     // getCategories = () =>{
     // return fetch("http://localhost:3000/categories", 
@@ -21,11 +19,11 @@ class Category extends React.Component {
     //data.map
     // }
 //bring this to reducer?/action?..will use thunk
-    getCategories = () =>{
-        return fetch("http://localhost:3000/categories")
-            .then(res => res.json())
-            .then(categories =>  this.setState({categories: categories}) )
-        }
+    // getCategories = () =>{
+    //     return fetch("http://localhost:3000/categories")
+    //         .then(res => res.json())
+    //         .then(categories =>  this.setState({categories: categories}) )
+    //     }
 // showCategories = (categories) =>{
 //     // console.log(categories)
 //     <DisplayCategories categoryData={categories} />
@@ -48,17 +46,19 @@ class Category extends React.Component {
     render ()
     
     {
-        
+        console.log("hitting the Category Container", this.props)
+        console.log("hitting the Category Container this is what is inside the categoryData", this.props.categoryData)
+
         return(    
             
         <div>
             <h1>This is my Category Component</h1>
             <DisplayCategories
             getCategories={this.props.fetchCategories}  
-            categoryData={this.state}
+            categoryData={this.props.categoryData}
             />
             <CategoryForm 
-            categoryData={this.state}
+            categoryData={this.props.categoryData}
             handleChange={this.handleChange}
             handleSubmit={this.handleSubmit}
             />
@@ -68,8 +68,10 @@ class Category extends React.Component {
 }
 
 const mapStateToProps = (state) => {
+    console.log("mSP", state)
+    // debugger;
     return {
-        categories: state.categories
+        categoryData: state.categories
     }
 }
 
