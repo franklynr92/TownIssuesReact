@@ -15,13 +15,24 @@ class Category extends React.Component {
     //     {accept:'application/json',
     //     }).then(res => res.json)
     //     .then(data => console.log(data))
+    //data.map
     // }
-
+//bring this to reducer?/action?..will use thunk
     getCategories = () =>{
         return fetch("http://localhost:3000/categories")
             .then(res => res.json())
-            .then(data => console.log(data))
+            .then(categories => this.showCategories(categories))
         }
+showCategories = (categories) =>{
+    console.log(categories)
+    categories.map(category => 
+    <h1 id="{category.id}">
+        Category: {category.type_of_issue}
+    </h1>
+)
+    debugger;
+
+}
 
     
     handleChange = event => {
@@ -46,6 +57,7 @@ class Category extends React.Component {
             <DisplayCategories
             getCategories={this.getCategories}  
             categoryData={this.state}
+            showCategories={this.showCategories}
             />
             <CategoryForm 
             categoryData={this.state}
