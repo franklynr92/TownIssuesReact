@@ -3,7 +3,7 @@ const reducer = (state = { categories: []}, action) => {
         case 'FETCH_CATEGORIES':
             return{
                 ...state,
-                categories: [...state.categories]
+                categories: action.categories
             }
         default: 
           return state;
