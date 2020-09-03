@@ -8,6 +8,7 @@ const CategoryForm = (props) => {
             <input 
             type="text" 
             name="name"
+            // value={props.categoryData.title}
             placeholder="Enter Category name"
             onChange={event => props.handleChange(event)}
             />

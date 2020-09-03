@@ -7,21 +7,19 @@ import CategoryForm from '../Stateless/CategoryForm'
 class Category extends React.Component {
     
     state = {
-        title: []
+        category: []
     }
     
     handleChange = event => {
-        event.preventDefault()
-        console.log()
         this.setState({
             [event.target.name]: event.target.value
         })
     }
 
     handleSubmit = event => {
-        event.prevenDefault()
-        console.log(this.state)
         debugger;
+        console.log(this.state)
+        event.prevenDefault()
     }
     render ()
     
