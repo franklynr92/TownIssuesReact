@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Issue extends React{
+class Issue extends React.Component {
 
     render(){
         return(
