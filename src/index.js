@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
 import Category from './Container/Category'
 import Navbar from './Stateless/Navbar'
 import Home from './Home'
