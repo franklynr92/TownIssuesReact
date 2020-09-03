@@ -1,4 +1,5 @@
 import React from 'react';
+import DisplayIssues from '../Stateless/DisplayIssues'
 
 class Issue extends React.Component {
 
@@ -6,6 +7,7 @@ class Issue extends React.Component {
         return(
             <div>
               <h1>This is my Issue Component</h1>
+              <DisplayIssues />
             </div>
           )
     }
