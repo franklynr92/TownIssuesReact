@@ -6,7 +6,8 @@ export const fetchCategories = () => {
     dispatch({type: C.FETCH_CATEGORIES})
     fetch("http://localhost:3000/categories")
     .then(res => res.json())
-    .then(categories => console.log(categories))
+    .then(categories => dispatch({type: C.ADD_CATEGORY, categories: categories})
+    )
 }
 
 
