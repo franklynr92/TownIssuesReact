@@ -11,14 +11,17 @@ class Category extends React.Component {
     }
     
     handleChange = event => {
-        event.preventDefault()
-        console.log(event)
-        debugger;
         this.setState({
             [event.target.name]: event.target.value
         })
     }
 
+    handleSubmit = event => {
+        event.prevenDefault()
+        event.persist()
+        console.log(this.state)
+        debugger;
+    }
     render ()
     
     {
@@ -31,6 +34,7 @@ class Category extends React.Component {
             <CategoryForm 
             categoryData={this.state}
             handleChange={this.handleChange}
+            handleSubmit={this.handleSubmit}
             />
         </div>)
         
