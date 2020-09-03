@@ -4,15 +4,15 @@ import Category from './Container/Category'
 import Navbar from './Stateless/Navbar'
 import Home from './Home'
 import Issue from './Container/Issue'
-import C from './Redux/constants'
+import thunk from 'redux-thunk';
 import { Provider } from 'react-redux';
-import { createStore } from 'redux';
+import { createStore, applyMiddleware } from 'redux';
 import reducer from './Redux/reducer/reducers'
 import { BrowserRouter as Router, Route} from 'react-router-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 
-const store = createStore(reducer)
+const store = createStore(reducer, applyMiddleware(thunk))
 
 ReactDOM.render(
   <React.StrictMode>
