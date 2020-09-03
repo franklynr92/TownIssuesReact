@@ -1,5 +1,5 @@
 import React from 'react';
-
+import DisplayCategories from '../Stateless/DisplayCategories'
 
 class Category extends React.Component {
 
@@ -7,6 +7,7 @@ class Category extends React.Component {
         return(    
         <div>
             <h1>This is my Category Component</h1>
+            <DisplayCategories />
         </div>)
     }
 }
