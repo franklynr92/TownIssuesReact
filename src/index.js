@@ -1,20 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
+import Category from './Container/Category'
 import Navbar from './Stateless/Navbar'
 import Home from './Home'
 import { BrowserRouter as Router, Route} from 'react-router-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 
-
-const Category = () => {
-  return (
-    <div>
-      <h1>This is my Category Component</h1>
-    </div>
-  )
-}
 
 const Issue =() => {
   return(
