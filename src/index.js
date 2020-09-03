@@ -6,7 +6,7 @@ import Home from './Home'
 import Issue from './Container/Issue'
 import C from './Redux/constants'
 import { Provider } from 'react-redux';
-import {createStore } from 'redux';
+import { createStore } from 'redux';
 import reducer from './Redux/reducer/reducers'
 import { BrowserRouter as Router, Route} from 'react-router-dom';
 import './index.css';
@@ -16,7 +16,7 @@ const store = createStore(reducer)
 
 ReactDOM.render(
   <React.StrictMode>
-    <Provider>
+    <Provider store={store}>
     <Router>
       <div>
         <Navbar />
