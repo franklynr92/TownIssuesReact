@@ -2,9 +2,11 @@ import React from 'react';
 
 const CategoryForm = () => {
     return ( 
+        <div>
         <form>
-            <input type="text" name="name">Enter Category name</input>
+            <input type="text" name="name"/>Enter Category name
         </form>
+        </div>
      );
 }
  
