@@ -4,18 +4,12 @@ import App from './App';
 import Category from './Container/Category'
 import Navbar from './Stateless/Navbar'
 import Home from './Home'
+import Issue from './Container/Issue'
 import { BrowserRouter as Router, Route} from 'react-router-dom';
 import './index.css';
 import * as serviceWorker from './serviceWorker';
 
 
-const Issue =() => {
-  return(
-    <div>
-      <h1>This is my Issue Component</h1>
-    </div>
-  )
-}
 
 ReactDOM.render(
   <React.StrictMode>
