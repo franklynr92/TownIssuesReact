@@ -1,6 +1,6 @@
 import C from '../constants'
 
-const fetchCategories = () => {
+export const fetchCategories = () => {
     return (dispatch) =>{
 
     dispatch({type: C.FETCH_CATEGORIES})
@@ -11,5 +11,3 @@ const fetchCategories = () => {
 
 
 }
-
-export default fetchCategories
