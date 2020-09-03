@@ -9,6 +9,7 @@ class Issue extends React.Component {
 
     handleChange = event =>{
         event.preventDefault()
+        debugger;
         this.setState({[event.target.name]: event.target.value});
         console.log(this.state)
 
