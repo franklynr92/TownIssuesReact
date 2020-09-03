@@ -4,6 +4,7 @@ import CategoryForm from '../Stateless/CategoryForm'
 
 
 
+
 class Category extends React.Component {
     
     state = {
@@ -25,10 +26,8 @@ class Category extends React.Component {
         }
 showCategories = (categories) =>{
     console.log(categories)
-    categories.map(category => 
-    <h1 id="{category.id}">
-        Category: {category.type_of_issue}
-    </h1>
+    categories.map(category => (
+    <DisplayCategories categoryData={category}/>)
 )
     debugger;
 
