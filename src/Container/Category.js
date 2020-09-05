@@ -56,8 +56,9 @@ state = {
     render ()
     
     {
-        console.log("hitting the Category Container", this.props)
-        console.log("hitting the Category Container this is what is inside the categoryData", this.props.categoryData)
+        // console.log("hitting the Category Container", this.props)
+        // console.log("hitting the Category Container this is what is inside the categoryData", this.props.categoryData)
+        console.log("category", this.props)
 
         return(    
             
