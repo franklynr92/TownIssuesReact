@@ -37,16 +37,21 @@ state = {
     handleChange = event => {
         
         this.setState({
-            type_of_issue: event.target.value
+            [event.target.name]: event.target.value
         })
         console.log('handleChange', this.state)
         
     }
 
     handleSubmit = event => {
-        debugger;
-        console.log(this.state)
-        event.prevenDefault()
+        
+        event.preventDefault()
+        event.persist()
+        console.log('handlesubmit', this.state)
+        let category = {...this.state}
+        console.log(this.props)
+        this.props.addFetchCategories(category)
+        
     }
     render ()
     
