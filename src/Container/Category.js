@@ -10,7 +10,9 @@ import CategoryForm from '../Stateless/CategoryForm'
 class Category extends React.Component {
     
     
-
+state = {
+    type_of_issue: ''
+}
     // getCategories = () =>{
     // return fetch("http://localhost:3000/categories", 
     //     {accept:'application/json',
