@@ -1,6 +1,7 @@
 import React from 'react';
 
-const DisplayIssues = () => {
+const DisplayIssues = (props) => {
+    console.log(props)
     return ( 
     <div>
         <h1>Display Issues Information here</h1>
