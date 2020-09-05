@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import {fetchIssues} from '../Redux/action/actions'
 import DisplayIssues from '../Stateless/DisplayIssues'
 import IssuesForm from '../Stateless/IssueForm'
 
