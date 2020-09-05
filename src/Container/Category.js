@@ -35,9 +35,12 @@ state = {
 
     
     handleChange = event => {
+        
         this.setState({
             [event.target.name]: event.target.value
         })
+        console.log('handleChange', this.state)
+        
     }
 
     handleSubmit = event => {
