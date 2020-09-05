@@ -1,4 +1,4 @@
-const reducer = (state = { categories: []}, action) => {
+const reducer = (state = { categories: [], issues: []}, action) => {
     
     switch(action.type){
         case 'ADD_CATEGORIES':
@@ -13,6 +13,12 @@ const reducer = (state = { categories: []}, action) => {
 
             return { categories: [...state.categories, action.category]
             }
+        case 'ADD_ISSUES':
+            console.log("hitting ADDissues case", action)
+            debugger;
+
+            return{ issues: action.issues }
+            
         default: 
           return state;
     }
