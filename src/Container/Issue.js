@@ -42,6 +42,7 @@ class Issue extends React.Component {
               <IssuesForm 
               issueData={this.state}
               handleChange={this.handleChange}
+              handleSubmit={this.handleSubmit}
               />
             </div>
           )
