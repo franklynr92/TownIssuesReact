@@ -17,7 +17,7 @@ class Issue extends React.Component {
         event.preventDefault()
         
         this.setState({[event.target.name]: event.target.value});
-        console.log(this.state)
+        console.log("handleChange what is in the state",this.state)
         
     }
 
@@ -29,6 +29,7 @@ class Issue extends React.Component {
         let issue = {...this.state}
         console.log('handlesubmit after issue created', issue)
         console.log(this.props)
+        debugger;
         // this.props.addFetchCategories(category)
         
     }
