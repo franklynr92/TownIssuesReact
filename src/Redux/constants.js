@@ -4,5 +4,6 @@ const constants ={
     FETCH_CATEGORIES: "FETCH_CATEGORIES",
     ADD_ISSUE: "ADD_ISSUE",
     FETCH_ISSUES: "FETCH_ISSUES",
+    ADD_ISSUES: "ADD_ISSUES",
 }
 export default constants;
