@@ -4,6 +4,7 @@ const DisplayIssues = (props) => {
     console.log(props)
     return ( 
     <div>
+        <button onClick={props.getIssues}>Click here</button>
         <h1>Display Issues Information here</h1>
         <table>
             <thead>
