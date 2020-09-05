@@ -5,7 +5,7 @@ export const fetchCategories = () => {
         console.log("hitting action for fetchCategories")
     fetch("http://localhost:3000/categories")
     .then(res => res.json())
-    .then(categories => dispatch({type: C.ADD_CATEGORY, categories: categories})
+    .then(categories => dispatch({type: C.ADD_CATEGORIES, categories: categories})
     )
 }
 
