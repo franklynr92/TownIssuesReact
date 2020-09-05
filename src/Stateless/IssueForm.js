@@ -5,19 +5,36 @@ const IssuesForm = (props) => {
     return (
         <div>
             <br></br>
-        <form>
+          <form>
             <label htmlFor="title">Issue Title</label>
-            <input type="text" name="title"/><br></br>
+            <input type="text" name="title" 
+            onChange={props.handleChange}
+            />
+            <br></br>
             <label htmlFor="description">Issue Description</label>
-            <textarea name="description" value="description" onChange={props.handleChange}></textarea><br></br>
+            <textarea name="description" 
+            onChange={props.handleChange}
+            ></textarea>
+            <br></br>
             <label htmlFor="date">Issue Date</label>
-            <input type="date" name="date"/><br></br>
+            <input type="date" 
+            name="date" 
+            onChange={props.handleChange}
+            /><br></br>
             <label htmlFor="issue_cross_street_1">Issue_Cross_Street_1</label>
-            <input type="text" name="issue_cross_street_1"/><br></br>
+            <input 
+            type="text" 
+            name="issue_cross_street_1"
+            onChange={props.handleChange}
+            />
+            <br></br>
             <label htmlFor="issue_cross_street_2">Issue_Cross_Street_2</label>
-            <input type="text" name="issue_cross_street_2"/><br></br>
+            <input type="text" name="issue_cross_street_2"
+            onChange={props.handleChange}
+            />
+            <br></br>
             <button type="submit">Submit</button>
-        </form>
+          </form>
         </div>
       );
 }
