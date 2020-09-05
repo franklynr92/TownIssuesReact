@@ -6,7 +6,7 @@ const DisplayCategories = (props) => {
         
     <div>
         <h1>Category Name</h1>
-        {console.log("displayCateogries props.categoryData has this:", props.categoryData.map(category => category.id))}
+        {console.log("displayCateogries props.categoryData has the id mapped out:", props)}
          {props.categoryData.length !== 0
          ? props.categoryData.map(category => <li key={category.id}>{category.type_of_issue}</li>)
         :  <button onClick={props.getCategories}>Click to get the categories</button>
