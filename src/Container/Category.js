@@ -37,7 +37,7 @@ state = {
     handleChange = event => {
         
         this.setState({
-            [event.target.name]: event.target.value
+            type_of_issue: event.target.value
         })
         console.log('handleChange', this.state)
         
@@ -78,8 +78,10 @@ state = {
     }
 }
 
+
+
 const mapStateToProps = (state) => {
-    console.log("mSP", state)
+    // console.log("mSP", state)
     // debugger;
     return {
         categoryData: state.categories
