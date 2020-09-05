@@ -11,3 +11,30 @@ export const fetchCategories = () => {
 
 
 }
+
+export const addFetchCategories = (category) => {
+    return (dispatch) => {
+        console.log("addfetchCategories", category)
+        debugger;
+        fetch("http://localhost:3000/categories", {
+            method: 'POST',    
+            headers: {
+                "Content-Type": "application/json",
+                "Accept": "application/json"
+              },           
+            body: JSON.stringify(category)
+        }).then(res => res.json())
+        .then(category => dispatch({type: C.ADD_CATEGORY, category: category}))
+
+    }
+}
+
+export const fetchIssues = () => {
+    return (dispatch) => {
+        console.log("hitting action for fetchIssues")
+    fetch("http://localhost:3000/issues")
+    .then(res => res.json())
+    .then(issues => dispatch({type: C.ADD_ISSUES, issues: issues})
+    )
+}
+}
