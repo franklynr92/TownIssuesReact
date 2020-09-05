@@ -21,6 +21,18 @@ class Issue extends React.Component {
         
     }
 
+    handleSubmit = event => {
+        
+        event.preventDefault()
+        event.persist()
+        console.log('handlesubmit', this.state)
+        let issue = {...this.state}
+        console.log('handlesubmit after issue created', issue)
+        console.log(this.props)
+        // this.props.addFetchCategories(category)
+        
+    }
+
     render(){
         return(
             <div>
