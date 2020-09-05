@@ -4,9 +4,6 @@ import { fetchCategories, addFetchCategories } from '../Redux/action/actions'
 import DisplayCategories from '../Stateless/DisplayCategories'
 import CategoryForm from '../Stateless/CategoryForm'
 
-
-
-
 class Category extends React.Component {
     
     
@@ -85,6 +82,7 @@ const mapStateToProps = (state) => {
     // debugger;
     return {
         categoryData: state.categories
+        
     }
 }
 
