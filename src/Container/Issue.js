@@ -49,4 +49,4 @@ class Issue extends React.Component {
     }
 }
 
-export default Issue;
+export default connect()(Issue);
