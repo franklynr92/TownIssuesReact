@@ -39,7 +39,9 @@ class Issue extends React.Component {
         return(
             <div>
               <h1>This is my Issue Component</h1>
-              <DisplayIssues />
+              <DisplayIssues 
+              getIssues={this.props.fetchIssues}
+              />
               <IssuesForm 
               issueData={this.state}
               handleChange={this.handleChange}
