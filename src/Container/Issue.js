@@ -50,4 +50,9 @@ class Issue extends React.Component {
     }
 }
 
-export default connect()(Issue);
+const mapDispatchToProps = dispatch => {
+    return {
+        fetchIssues: () => dispatch(fetchIssues())
+    }
+}
+export default connect(null, mapDispatchToProps)(Issue);
