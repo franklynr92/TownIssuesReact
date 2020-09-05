@@ -5,7 +5,7 @@ const IssuesForm = (props) => {
     return (
         <div>
             <br></br>
-          <form>
+          <form onSubmit={props.handleSubmit}>
             <label htmlFor="title">Issue Title</label>
             <input type="text" name="title" 
             onChange={props.handleChange}
