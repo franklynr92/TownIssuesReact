@@ -1,4 +1,5 @@
 import React from 'react';
+import { connect } from 'react-redux';
 import DisplayIssues from '../Stateless/DisplayIssues'
 import IssuesForm from '../Stateless/IssueForm'
 
@@ -17,7 +18,7 @@ class Issue extends React.Component {
         
         this.setState({[event.target.name]: event.target.value});
         console.log(this.state)
-        debugger;
+        
     }
 
     render(){
