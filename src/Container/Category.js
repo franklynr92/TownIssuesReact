@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { fetchCategories } from '../Redux/action/actions'
+import { fetchCategories, addFetchCategories } from '../Redux/action/actions'
 import DisplayCategories from '../Stateless/DisplayCategories'
 import CategoryForm from '../Stateless/CategoryForm'
 
