@@ -22,7 +22,7 @@ const DisplayIssues = (props) => {
         <table>
             <thead>
               <tr>
-                <th>Issue #here</th>
+                <th>Issue #</th>
                 <th>Issue title</th>
                 <th>Issue date</th>
                 <th>Issue description</th>
