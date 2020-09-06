@@ -32,15 +32,19 @@ const DisplayIssues = (props) => {
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>1</td>
+              {/* <tr> */}
+              {props.issuesData.length !== 0
+        ? displayTheIssues
+        : <button onClick={props.getIssues}>Click here</button>
+        }
+                {/* <td>1</td>
                 <td>Place title of issue here</td>
                 <td>Place description of issue here</td>
                 <td>Place date of issue here mm/yy</td>
                 <td>Place cross_street_1 here</td>
                 <td>Place cross_street_2 here</td>
-                <td>Place resolved true or false here</td>
-              </tr>
+                <td>Place resolved true or false here</td> */}
+              {/* </tr> */}
             </tbody>
         </table>
     </div> );
