@@ -3,7 +3,7 @@ import React from 'react';
 const DisplayIssues = (props) => {
   const displayTheIssues = props.issuesData.map(issue =>
     <tr key={issue.id}>
-  
+  <td>{issue.id}</td>
   <td>{issue.title}</td>
   <td>{issue.date}</td>
   <td>{issue.description}</td>
