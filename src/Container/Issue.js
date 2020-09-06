@@ -40,7 +40,7 @@ class Issue extends React.Component {
             <div>
               <h1>This is my Issue Component</h1>
               <DisplayIssues
-              issuesData={this.props.issueData} 
+              issuesData={this.props.issuesData} 
               getIssues={this.props.fetchIssues}
               />
               <IssuesForm 
@@ -54,6 +54,7 @@ class Issue extends React.Component {
 }
 
 const mapStateToProps = (state) => {
+    console.log(" issue msp", state.issues)
     return {
         issuesData: state.issues
     }
