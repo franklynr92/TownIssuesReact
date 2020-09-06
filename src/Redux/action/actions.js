@@ -34,7 +34,9 @@ export const fetchIssues = () => {
         console.log("hitting action for fetchIssues")
     fetch("http://localhost:3000/issues")
     .then(res => res.json())
-    .then(issues => console.log(issues) //dispatch({type: C.ADD_ISSUES, issues: issues})
+    .then(issues => dispatch({type: C.ADD_ISSUES, issues: issues})
     )
 }
 }
+
+//console.log(issues)
