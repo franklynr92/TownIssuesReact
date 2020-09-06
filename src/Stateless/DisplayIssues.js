@@ -28,6 +28,7 @@ const DisplayIssues = (props) => {
                 <th>Issue #here</th>
                 <th>Issue title</th>
                 <th>Issue date</th>
+                <th>Issue description</th>
                 <th>Issue cross_street_1</th>
                 <th>Issue cross_street_2</th>
                 <th>Resolved?</th>
