@@ -17,5 +17,11 @@ const DisplayCategories = (props) => {
         
     </div> );
 }
- 
+/*
+props.issuesData.map(issue => <tr><td>{issue.id}</td>, <td>{issue.title}</td></tr>)
+
+)
+*/
+
+
 export default DisplayCategories;
