@@ -18,10 +18,7 @@ const DisplayIssues = (props) => {
     <div>
        
         <h1>Display Issues Information here</h1>
-        {props.issuesData.length !== 0
-        ? displayTheIssues
-        : <button onClick={props.getIssues}>Click here</button>
-        }
+       
         <table>
             <thead>
               <tr>
