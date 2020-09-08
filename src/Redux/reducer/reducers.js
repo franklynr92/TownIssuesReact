@@ -18,6 +18,11 @@ const reducer = (state = { categories: [], issues: []}, action) => {
             debugger;
 
             return{ issues: action.issues }
+        case 'ADD_ISSUE':
+            console.log('hitting ADDISSUE CASE', action)
+            debugger;
+            return { issues: [...state.issues, action.issue]
+            }
             
         default: 
           return state;
