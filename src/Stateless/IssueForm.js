@@ -7,8 +7,11 @@ const IssuesForm = (props) => {
   //data must be conditionally rendered as it is undefined when it is first retrieved from data base and then it gets defined
     return (
         <div>
-          {props.categoriesData && props.categoriesData.map(category => 
-            <select>
+          
+          <button onClick={props.getIssueCategories}>Click here to get Categories</button>
+            <br></br>
+          <form onSubmit={props.handleSubmit}>
+          <select>
               <option key={category.id}>{category.type_of_issue}</option>
             {/* (category.type_of_issue, category.id)  */}
             </select>)
