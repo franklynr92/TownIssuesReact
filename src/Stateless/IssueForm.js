@@ -2,6 +2,8 @@ import React from 'react';
 import '../StatelessCss/IssuesForm.css'
 
 const IssuesForm = (props) => {
+  console.log("IssuesForm",props)
+  const displayCategories = props.categoriesData.map(category => console.log(category))
     return (
         <div>
             <br></br>
