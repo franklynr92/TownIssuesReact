@@ -6,6 +6,10 @@ const IssuesForm = (props) => {
   const displayCategories = props.categoriesData.map(category => console.log(category))
     return (
         <div>
+          {props.categoriesData.length !== 0
+          ? displayCategories
+          :<button onClick={props.getIssueCategories}>Click here to get Categories</button>
+          }
             <br></br>
           <form onSubmit={props.handleSubmit}>
             <label htmlFor="title">Issue Title</label>
