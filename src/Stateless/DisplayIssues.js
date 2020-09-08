@@ -33,10 +33,19 @@ const DisplayIssues = (props) => {
             </thead>
             <tbody>
               {/* <tr> */}
-              {props.issuesData.length !== 0
-        ? displayTheIssues
-        : <button onClick={props.getIssues}>Click here</button>
-        }
+              {props.issuesData && props.issuesData.map(issue =>
+    <tr key={issue.id}>
+  <td>{issue.id}</td>
+  <td>{issue.title}</td>
+  <td>{issue.date}</td>
+  <td>{issue.description}</td>
+  <td>{issue.cross_street_1}</td>
+  <td>{issue.cross_street_2}</td>
+  <td>{issue.resolved}</td>
+  </tr> 
+  )}
+     
+        
                 {/* <td>1</td>
                 <td>Place title of issue here</td>
                 <td>Place description of issue here</td>
