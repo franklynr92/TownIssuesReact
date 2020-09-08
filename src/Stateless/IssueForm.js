@@ -4,6 +4,7 @@ import '../StatelessCss/IssuesForm.css'
 const IssuesForm = (props) => {
   console.log("IssuesForm",props)
   // const displayCategories = props.categoriesData.map(category => console.log(category))
+  //data must be conditionally rendered as it is undefined when it is first retrieved from data base and then it gets defined
     return (
         <div>
           {props.categoriesData && props.categoriesData.map(category => console.log(category.type_of_issue, category.id) )}
