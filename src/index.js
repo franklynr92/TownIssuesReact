@@ -21,8 +21,8 @@ ReactDOM.render(
       <div>
         <Navbar />
         <Route path="/" component={Home}/>
-        <Route path="/category" component={Category}/>
-        <Route path="/issue" component={Issue}/>
+        <Route path="/categories" component={Category}/>
+        <Route path="/issues" component={Issue}/>
       </div>
     </Router>
     </Provider>
