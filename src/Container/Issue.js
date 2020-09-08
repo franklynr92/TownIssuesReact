@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import {fetchIssues} from '../Redux/action/actions'
+import {fetchCategories, fetchIssues} from '../Redux/action/actions'
 import DisplayIssues from '../Stateless/DisplayIssues'
 import IssuesForm from '../Stateless/IssueForm'
 
@@ -42,6 +42,7 @@ class Issue extends React.Component {
               <DisplayIssues
               issuesData={this.props.issuesData} 
               getIssues={this.props.fetchIssues}
+              getIssueCategories={this.props.fetchCategories}
               />
               <IssuesForm 
               issueData={this.state}
@@ -62,7 +63,8 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = dispatch => {
     return {
-        fetchIssues: () => dispatch(fetchIssues())
+        fetchIssues: () => dispatch(fetchIssues()),
+        fetchCategories: () => dispatch(fetchCategories())
     }
 }
 export default connect(mapStateToProps, mapDispatchToProps)(Issue);
