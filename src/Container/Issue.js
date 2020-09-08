@@ -66,7 +66,8 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = dispatch => {
     return {
         fetchIssues: () => dispatch(fetchIssues()),
-        fetchCategories: () => dispatch(fetchCategories())
+        fetchCategories: () => dispatch(fetchCategories()),
+        submitIssue: (issue) => dispatch(submitIssueFetch(issue))
     }
 }
 export default connect(mapStateToProps, mapDispatchToProps)(Issue);
