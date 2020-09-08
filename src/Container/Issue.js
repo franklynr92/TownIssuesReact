@@ -42,10 +42,11 @@ class Issue extends React.Component {
               <DisplayIssues
               issuesData={this.props.issuesData} 
               getIssues={this.props.fetchIssues}
-              getIssueCategories={this.props.fetchCategories}
               />
               <IssuesForm 
               issueData={this.state}
+              getIssueCategories={this.props.fetchCategories}
+              categoriesData={this.props.categoriesData}
               handleChange={this.handleChange}
               handleSubmit={this.handleSubmit}
               />
@@ -57,7 +58,8 @@ class Issue extends React.Component {
 const mapStateToProps = (state) => {
     console.log(" issue msp", state.issues)
     return {
-        issuesData: state.issues
+        issuesData: state.issues,
+        categoriesData: state.categories
     }
 }
 
