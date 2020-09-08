@@ -1,17 +1,17 @@
 import React from 'react';
 
 const DisplayIssues = (props) => {
-  const displayTheIssues = props.issuesData.map(issue =>
-    <tr key={issue.id}>
-  <td>{issue.id}</td>
-  <td>{issue.title}</td>
-  <td>{issue.date}</td>
-  <td>{issue.description}</td>
-  <td>{issue.cross_street_1}</td>
-  <td>{issue.cross_street_2}</td>
-  <td>{issue.resolved}</td>
-  </tr> 
-  )
+  // const displayTheIssues = props.issuesData.map(issue =>
+  //   <tr key={issue.id}>
+  // <td>{issue.id}</td>
+  // <td>{issue.title}</td>
+  // <td>{issue.date}</td>
+  // <td>{issue.description}</td>
+  // <td>{issue.cross_street_1}</td>
+  // <td>{issue.cross_street_2}</td>
+  // <td>{issue.resolved}</td>
+  // </tr> 
+  // )
 
     console.log(props.issuesData.map(issue => issue))
     return ( 
