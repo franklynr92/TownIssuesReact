@@ -56,6 +56,7 @@ const DisplayIssues = (props) => {
               {/* </tr> */}
             </tbody>
         </table>
+        <button onClick={props.getIssues}>Click here for the Issues</button>
     </div> );
 }
  
