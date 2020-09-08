@@ -39,7 +39,7 @@ export const fetchIssues = () => {
 }
 }
 
-export const addFetchIssue = () => {
+export const submitIssueFetch = () => {
     return (dispatch) => {
         console.log("hitting action for addFetchIssues")
         fetch("http://localhost:3000/issues")
