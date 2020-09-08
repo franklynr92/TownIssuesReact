@@ -13,7 +13,7 @@ const DisplayIssues = (props) => {
   // </tr> 
   // )
 
-    console.log(props.issuesData.map(issue => issue))
+    // console.log(props.issuesData.map(issue => issue))
     return ( 
     <div>
        
