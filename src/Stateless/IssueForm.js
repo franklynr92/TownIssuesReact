@@ -3,7 +3,7 @@ import '../StatelessCss/IssuesForm.css'
 
 const IssuesForm = (props) => {
   console.log("IssuesForm",props)
-  const displayCategories = props.categoriesData.map(category => console.log(category))
+  // const displayCategories = props.categoriesData.map(category => console.log(category))
     return (
         <div>
           {props.categoriesData.length !== 0
