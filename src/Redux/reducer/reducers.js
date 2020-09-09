@@ -21,6 +21,7 @@ const reducer = (state = { categories: [], issues: []}, action) => {
         case 'ADD_ISSUE':
             console.log('hitting ADDISSUE CASE', action)
             debugger;
+            if (state.issues){
             return { issues: [...state.issues, action.issue]
             }
             
