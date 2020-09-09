@@ -11,7 +11,7 @@ class Issue extends React.Component {
           date: '',
           cross_street_1: '',
           cross_street_2: '',
-          category_id: ' ',
+          category_id: 0,
        
    }
 
