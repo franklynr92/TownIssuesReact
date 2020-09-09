@@ -17,7 +17,6 @@ const IssuesForm = (props) => {
             }
             </select>
             <br></br>
-          <form onSubmit={props.handleSubmit}>
             <label htmlFor="title">Issue Title</label>
             <input type="text" name="title" 
             onChange={props.handleChange}
