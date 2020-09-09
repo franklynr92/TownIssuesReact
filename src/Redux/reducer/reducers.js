@@ -23,6 +23,8 @@ const reducer = (state = { categories: [], issues: []}, action) => {
             debugger;
             if (state.issues){
             return { issues: [...state.issues, action.issue]
+            }} else {
+                return { issues: [action.issue]}
             }
             
         default: 
