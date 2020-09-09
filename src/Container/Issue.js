@@ -15,6 +15,13 @@ class Issue extends React.Component {
        
    }
 
+   handleOptions = event =>{
+       event.preventDefault()
+       debugger;
+       this.setState({[event.target.name]: event.target.value});
+       console.log("handleOptions what is in the state", this.state)
+   }
+
     handleChange = event =>{
         event.preventDefault()
         
