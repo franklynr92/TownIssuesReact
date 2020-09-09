@@ -1,4 +1,5 @@
 import React from 'react';
+import '../StatelessCss/DisplayIssues.css'
 
 const DisplayIssues = (props) => {
     return ( 
@@ -25,7 +26,7 @@ const DisplayIssues = (props) => {
                 <td>{issue.description}</td>
                 <td>{issue.cross_street_1}</td>
                 <td>{issue.cross_street_2}</td>
-                <td>{issue.resolved}</td>
+                <td>{issue.resolved.toString()}</td>
               </tr> 
               )}
             </tbody>
