@@ -36,12 +36,12 @@ const IssuesForm = (props) => {
             <label htmlFor="cross_street_1">Issue_Cross_Street_1</label>
             <input 
             type="text" 
-            name="issue_cross_street_1"
+            name="cross_street_1"
             onChange={props.handleChange}
             />
             <br></br>
-            <label htmlFor="issue_cross_street_2">Issue_Cross_Street_2</label>
-            <input type="text" name="issue_cross_street_2"
+            <label htmlFor="cross_street_2">Issue_Cross_Street_2</label>
+            <input type="text" name="cross_street_2"
             onChange={props.handleChange}
             />
             <br></br>
