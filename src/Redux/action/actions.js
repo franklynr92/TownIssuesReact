@@ -1,6 +1,6 @@
 import C from '../constants'
 
-const BASE = process.env.NODE_ENV === 'production' ? "https://chatapp-back-end.herokuapp.com" : "http://localhost:3000";
+const BASE = process.env.NODE_ENV === 'production' ? "https://glacial-springs-18243.herokuapp.com/" : "http://localhost:3000";
 
 export const fetchCategories = () => {
     return (dispatch) => {
