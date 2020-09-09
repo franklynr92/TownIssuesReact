@@ -38,7 +38,7 @@ class Issue extends React.Component {
         console.log('handlesubmit after issue created', issue)
         console.log(this.props)
         debugger;
-        // this.props.addFetchCategories(category)
+        this.props.submitIssue(issue)
         
     }
 
