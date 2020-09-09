@@ -2,9 +2,6 @@ import React from 'react';
 import '../StatelessCss/IssuesForm.css'
 
 const IssuesForm = (props) => {
-  console.log("IssuesForm",props)
-  // const displayCategories = props.categoriesData.map(category => console.log(category))
-  //data must be conditionally rendered as it is undefined when it is first retrieved from data base and then it gets defined
     return (
         <div>
           <button onClick={props.getIssueCategories}>Click here to get Categories</button>
@@ -48,5 +45,4 @@ const IssuesForm = (props) => {
         </div>
       );
 }
- 
 export default IssuesForm;
