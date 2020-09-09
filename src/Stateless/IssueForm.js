@@ -33,7 +33,7 @@ const IssuesForm = (props) => {
             name="date" 
             onChange={props.handleChange}
             /><br></br>
-            <label htmlFor="issue_cross_street_1">Issue_Cross_Street_1</label>
+            <label htmlFor="cross_street_1">Issue_Cross_Street_1</label>
             <input 
             type="text" 
             name="issue_cross_street_1"
