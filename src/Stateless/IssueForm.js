@@ -10,7 +10,7 @@ const IssuesForm = (props) => {
           <button onClick={props.getIssueCategories}>Click here to get Categories</button>
             <br></br>
           <form onSubmit={props.handleSubmit}>
-          <select name="category_id" onChange={props.handleOptions}>
+          <select name="category_id" onChange={props.handleChange}>
           {props.categoriesData && props.categoriesData.map(category => 
               <option name="category_id" value={category.id} key={category.id}>{category.type_of_issue}</option>)
             }
