@@ -18,7 +18,7 @@ class Issue extends React.Component {
    handleOptions = event =>{
        event.preventDefault()
        debugger;
-       this.setState({[event.target.name]: event.target.value});
+       this.setState({[event.target.name]: parseInt(event.target.value, 10)});
        console.log("handleOptions what is in the state", this.state)
    }
 
