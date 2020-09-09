@@ -7,6 +7,7 @@ export const fetchCategories = () => {
     .then(res => res.json())
     .then(categories => dispatch({type: C.ADD_CATEGORIES, categories: categories})
     )
+    .catch(alert('Error retrieving data'))
 }
 
 
@@ -25,7 +26,7 @@ export const addFetchCategories = (category) => {
             body: JSON.stringify(category)
         }).then(res => res.json())
         .then(category => dispatch({type: C.ADD_CATEGORY, category: category}))
-
+        .catch(alert('Error retrieving data'))
     }
 }
 
@@ -36,6 +37,7 @@ export const fetchIssues = () => {
     .then(res => res.json())
     .then(issues => dispatch({type: C.ADD_ISSUES, issues: issues})
     )
+    .catch(alert('Error retrieving data'))
 }
 }
 
@@ -52,6 +54,7 @@ export const submitIssueFetch = (issue) => {
             })
         .then(res => res.json())
         .then(issue => dispatch({type: C.ADD_ISSUE, issue: issue}))
+        .catch(alert('Error retrieving data'))
     }
 }
 
