@@ -24,7 +24,6 @@ class Issue extends React.Component {
 
     handleChange = event =>{
         event.preventDefault()
-        
         this.setState({[event.target.name]: event.target.value});
         console.log("handleChange what is in the state",this.state)
         debugger;
