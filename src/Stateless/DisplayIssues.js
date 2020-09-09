@@ -1,24 +1,9 @@
 import React from 'react';
 
 const DisplayIssues = (props) => {
-  // const displayTheIssues = props.issuesData.map(issue =>
-  //   <tr key={issue.id}>
-  // <td>{issue.id}</td>
-  // <td>{issue.title}</td>
-  // <td>{issue.date}</td>
-  // <td>{issue.description}</td>
-  // <td>{issue.cross_street_1}</td>
-  // <td>{issue.cross_street_2}</td>
-  // <td>{issue.resolved}</td>
-  // </tr> 
-  // )
-
-    // console.log(props.issuesData.map(issue => issue))
     return ( 
     <div>
-       
-        <h1>Display Issues Information here</h1>
-       
+      <h1>Display Issues Information here</h1>
         <table>
             <thead>
               <tr>
@@ -32,32 +17,20 @@ const DisplayIssues = (props) => {
               </tr>
             </thead>
             <tbody>
-              {/* <tr> */}
               {props.issuesData && props.issuesData.map(issue =>
-    <tr key={issue.id}>
-  <td>{issue.id}</td>
-  <td>{issue.title}</td>
-  <td>{issue.date}</td>
-  <td>{issue.description}</td>
-  <td>{issue.cross_street_1}</td>
-  <td>{issue.cross_street_2}</td>
-  <td>{issue.resolved}</td>
-  </tr> 
-  )}
-     
-        
-                {/* <td>1</td>
-                <td>Place title of issue here</td>
-                <td>Place description of issue here</td>
-                <td>Place date of issue here mm/yy</td>
-                <td>Place cross_street_1 here</td>
-                <td>Place cross_street_2 here</td>
-                <td>Place resolved true or false here</td> */}
-              {/* </tr> */}
+              <tr key={issue.id}>
+                <td>{issue.id}</td>
+                <td>{issue.title}</td>
+                <td>{issue.date}</td>
+                <td>{issue.description}</td>
+                <td>{issue.cross_street_1}</td>
+                <td>{issue.cross_street_2}</td>
+                <td>{issue.resolved}</td>
+              </tr> 
+              )}
             </tbody>
         </table>
         <button onClick={props.getIssues}>Click here for the Issues</button>
     </div> );
 }
- 
 export default DisplayIssues;
