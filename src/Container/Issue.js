@@ -15,12 +15,6 @@ class Issue extends React.Component {
        
    }
 
-   handleOptions = event =>{
-       event.preventDefault()
-       this.setState({[event.target.name]: parseInt(event.target.value, 10)});
-       console.log("handleOptions what is in the state", this.state)
-   }
-
     handleChange = event =>{
         event.preventDefault()
         if (isNaN(event.target.value * 1)) {
@@ -54,7 +48,6 @@ class Issue extends React.Component {
               issueData={this.state}
               getIssueCategories={this.props.fetchCategories}
               categoriesData={this.props.categoriesData}
-              handleOptions={this.handleOptions}
               handleChange={this.handleChange}
               handleSubmit={this.handleSubmit}
               />
