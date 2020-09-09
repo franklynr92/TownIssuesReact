@@ -41,8 +41,15 @@ export const fetchIssues = () => {
 
 export const submitIssueFetch = (issue) => {
     return (dispatch) => {
-        console.log("hitting action for addFetchIssues")
-        fetch("http://localhost:3000/issues")
+        console.log("hitting action for addFetchIssues", issue)
+        fetch("http://localhost:3000/issues", {
+            method: 'POST',    
+            headers: {
+                "Content-Type": "application/json",
+                "Accept": "application/json"
+              }, 
+              body: JSON.stringify(issue)
+            })
         .then(res => res.json())
         .then(issue => dispatch({type: C.ADD_ISSUE, issue: issue}))
     }
