@@ -34,5 +34,4 @@ const Navbar = () => {
         }}>Issue</NavLink>
         </div>  );
 }
- 
 export default Navbar;
