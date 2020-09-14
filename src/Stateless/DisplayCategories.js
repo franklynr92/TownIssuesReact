@@ -1,4 +1,5 @@
 import React from 'react';
+import MapCategoryData from '../Stateless/MapCategoryData'
 
 const DisplayCategories = (props) => {
     
