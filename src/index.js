@@ -36,4 +36,5 @@ ReactDOM.render(
 // unregister() to register() below. Note this comes with some pitfalls.
 //https://youtu.be/eofpZPRUnP8
 // Learn more about service workers: https://bit.ly/CRA-PWA
-//serviceWorker.unregister();
+serviceWorker.unregister();
+//remember to push to heroku master[]
