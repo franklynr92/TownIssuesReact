@@ -11,3 +11,4 @@ const MapCategoryData = (props, {categoryData}) => {
 }
  
 export default MapCategoryData;
+//remember to push to heroku master

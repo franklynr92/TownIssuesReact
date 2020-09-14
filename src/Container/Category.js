@@ -72,3 +72,4 @@ const mapDispatchToProps = dispatch => {
 
 
 export default connect(mapStateToProps, mapDispatchToProps)(Category)
+//remember to push to heroku master []

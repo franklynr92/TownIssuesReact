@@ -33,6 +33,14 @@ class Issue extends React.Component {
         console.log(this.props)
         debugger;
         this.props.submitIssue(issue)
+        this.setState({  
+        title: '',
+        description: '',
+        date: '',
+        cross_street_1: '',
+        cross_street_2: '',
+        category_id: 0,
+     })
         
     }
 
