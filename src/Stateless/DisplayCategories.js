@@ -7,7 +7,7 @@ const DisplayCategories = (props) => {
         <div>
         <h1>Categories</h1>
             <ul>
-            {props.categoryData && props.categoryData.map(category => <li key={category.id}>{category.type_of_issue}</li>) }
+            <MapCategoryData props={props} />
             </ul>
         <button onClick={props.getCategories}>Click to get the categories</button>
         </div> 
