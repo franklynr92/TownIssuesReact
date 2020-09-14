@@ -44,7 +44,6 @@ state = {
         
         event.preventDefault()
         event.persist()
-        console.log('handlesubmit', this.state)
         let category = {...this.state}
         console.log(this.props)
         this.props.addFetchCategories(category)
