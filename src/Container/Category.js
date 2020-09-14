@@ -45,7 +45,6 @@ state = {
         event.preventDefault()
         event.persist()
         let category = {...this.state}
-        console.log(this.props)
         this.props.addFetchCategories(category)
         
     }
