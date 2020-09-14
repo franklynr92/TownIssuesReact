@@ -10,25 +10,6 @@ class Category extends React.Component {
 state = {
     type_of_issue: ''
 }
-    // getCategories = () =>{
-    // return fetch("http://localhost:3000/categories", 
-    //     {accept:'application/json',
-    //     }).then(res => res.json)
-    //     .then(data => console.log(data))
-    //data.map
-    // }
-//bring this to reducer?/action?..will use thunk
-    // getCategories = () =>{
-    //     return fetch("http://localhost:3000/categories")
-    //         .then(res => res.json())
-    //         .then(categories =>  this.setState({categories: categories}) )
-    //     }
-// showCategories = (categories) =>{
-//     // console.log(categories)
-//     <DisplayCategories categoryData={categories} />
-
-
-// }
 
     
     handleChange = event => {
@@ -51,12 +32,7 @@ state = {
     render ()
     
     {
-        // console.log("hitting the Category Container", this.props)
-        // console.log("hitting the Category Container this is what is inside the categoryData", this.props.categoryData)
-        console.log("category", this.props)
-
-        return(    
-            
+        return(           
         <div>
             <h1>This is my Category Component</h1>
             <DisplayCategories
