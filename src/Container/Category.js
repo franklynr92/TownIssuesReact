@@ -36,7 +36,7 @@ state = {
         <div>
             <h1>This is my Category Component</h1>
             <DisplayCategories
-            getCategories={this.props.boundFetchCategories}
+            // getCategories={this.props.boundFetchCategories}
             
             categoryData={this.props.categoryData}
             />
