@@ -31,7 +31,7 @@ state = {
     }
 
     componentDidMount(){
-       
+       console.log("component did mount category", this.props)
     }
 
     render ()
