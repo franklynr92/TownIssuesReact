@@ -50,7 +50,7 @@ class Issue extends React.Component {
               <h1>This is my Issue Component</h1>
               <DisplayIssues
               issuesData={this.props.issuesData} 
-              getIssues={this.props.boundFetchIssues}
+            //   getIssues={this.props.boundFetchIssues}
               />
               <IssuesForm 
               issueData={this.state}
