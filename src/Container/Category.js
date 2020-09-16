@@ -29,6 +29,11 @@ state = {
         this.props.boundAddFetchCategories(category)
         
     }
+
+    componentDidMount(){
+       
+    }
+
     render ()
     
     {
