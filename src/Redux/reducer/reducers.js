@@ -32,4 +32,5 @@ const reducer = (state = { categories: [], issues: []}, action) => {
     }
 }
 
+
 export default reducer;

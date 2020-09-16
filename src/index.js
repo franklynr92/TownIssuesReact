@@ -7,7 +7,7 @@ import Issue from './Container/Issue'
 import thunk from 'redux-thunk';
 import { Provider } from 'react-redux';
 import { createStore, applyMiddleware } from 'redux';
-//add import {Root}
+
 import reducer from './Redux/reducer/reducers'
 import { BrowserRouter as Router, Route} from 'react-router-dom';
 import './index.css';
@@ -20,7 +20,6 @@ ReactDOM.render(
     <Provider store={store}>
     <Router>
       <div>
-        {/* add root*/}
         <Navbar />
         <Route path="/" component={Home}/>
         <Route path="/categories" component={Category}/>

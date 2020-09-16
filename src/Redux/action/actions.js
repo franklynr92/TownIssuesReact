@@ -60,4 +60,3 @@ export const submitIssueFetch = (issue) => {
     }
 }
 
-//console.log(issues)
