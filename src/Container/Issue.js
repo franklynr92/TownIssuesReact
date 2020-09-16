@@ -54,7 +54,7 @@ class Issue extends React.Component {
               />
               <IssuesForm 
               issueData={this.state}
-              getIssueCategories={this.props.boundFetchCategories}
+            //   getIssueCategories={this.props.boundFetchCategories}
               categoriesData={this.props.boundCategoriesData}
               handleChange={this.handleChange}
               handleSubmit={this.handleSubmit}
