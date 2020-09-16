@@ -32,6 +32,7 @@ state = {
 
     componentDidMount(){
        console.log("component did mount category", this.props)
+       this.props.boundFetchCategories()
     }
 
     render ()
