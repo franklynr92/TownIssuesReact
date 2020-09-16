@@ -54,11 +54,11 @@ class Issue extends React.Component {
             <div>
               <h1>This is my Issue Component</h1>
               <DisplayIssues
-              issuesData={this.props.issuesData} 
+              boundIssuesData={this.props.issuesData} 
             //   getIssues={this.props.boundFetchIssues}
               />
               <IssuesForm 
-              issueData={this.state}
+              boundissueData={this.state}
             //   getIssueCategories={this.props.boundFetchCategories}
               categoriesData={this.props.boundCategoriesData}
               handleChange={this.handleChange}
@@ -72,8 +72,8 @@ class Issue extends React.Component {
 const mapStateToProps = (state) => {
     console.log(" issue msp", state.issues)
     return {
-        issuesData: state.issues,
-        categoriesData: state.categories
+        boundIssuesData: state.issues,
+        boundCategoriesData: state.categories
     }
 }
 
