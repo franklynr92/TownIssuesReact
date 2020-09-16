@@ -6,7 +6,7 @@ import CategoryForm from '../Stateless/CategoryForm'
 
 class Category extends React.Component {
     
-    
+
 state = {
     type_of_issue: ''
 }
@@ -18,6 +18,7 @@ state = {
             type_of_issue: event.target.value
         })
         console.log('handleChange', this.state)
+     
         
     }
 
@@ -26,7 +27,7 @@ state = {
         event.preventDefault()
         event.persist()
         let category = {...this.state}
-        this.props.addFetchCategories(category)
+        this.props.boundAddFetchCategories(category)
         
     }
     render ()
@@ -36,7 +37,8 @@ state = {
         <div>
             <h1>This is my Category Component</h1>
             <DisplayCategories
-            getCategories={this.props.fetchCategories}  
+            getCategories={this.props.boundFetchCategories}
+            
             categoryData={this.props.categoryData}
             />
             <CategoryForm 
@@ -52,8 +54,6 @@ state = {
 
 
 const mapStateToProps = (state) => {
-    // console.log("mSP", state)
-    // debugger;
     return {
         categoryData: state.categories
         
@@ -63,8 +63,8 @@ const mapStateToProps = (state) => {
 const mapDispatchToProps = dispatch => {
     
     return {
-        fetchCategories: () => dispatch(fetchCategories()),
-        addFetchCategories: (category) => dispatch(addFetchCategories(category))
+        boundFetchCategories: () => dispatch(fetchCategories()),
+        boundAddFetchCategories: (category) => dispatch(addFetchCategories(category))
     }
 }
 
