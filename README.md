@@ -13,4 +13,6 @@ Users will be able to view issues by categories
 Users will be able to view issues by resolved and unresolved
 users will be able to make an issue resolved by clicking on the 
 resolved button
+Users will also be able to view data in colorful format
+Users will be able to upload images as well
 
