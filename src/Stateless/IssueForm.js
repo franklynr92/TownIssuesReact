@@ -4,7 +4,7 @@ import '../StatelessCss/IssuesForm.css'
 const IssuesForm = (props) => {
     return (
         <div>
-          <button onClick={props.getIssueCategories}>Click here to get Categories</button>
+          {/* <button onClick={props.getIssueCategories}>Click here to get Categories</button> */}
             <br></br>
           <form onSubmit={props.handleSubmit}>
           <select name="category_id" onChange={props.handleChange}>
