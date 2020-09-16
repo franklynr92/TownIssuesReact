@@ -2,8 +2,6 @@ import React from 'react';
 
 const CategoryForm = (props) => {
 
-   
- 
     return ( 
         <div>
             {console.log("categoryForm", props)}
@@ -11,7 +9,6 @@ const CategoryForm = (props) => {
             <input 
             type="text" 
             name="name"
-            // value={props.categoryData.title}
             placeholder="Enter Category name"
             onChange={event => props.handleChange(event)}
             />
