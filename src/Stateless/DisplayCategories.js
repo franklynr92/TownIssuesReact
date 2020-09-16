@@ -2,7 +2,7 @@ import React from 'react';
 import MapCategoryData from '../Stateless/MapCategoryData'
 
 const DisplayCategories = (props) => {
-    console.log(props)
+    console.log("dispaly categories", props.categoryData)
     return (
         <div>
         <h1>Categories</h1>
