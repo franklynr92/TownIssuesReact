@@ -17,7 +17,6 @@ state = {
         this.setState({
             type_of_issue: event.target.value
         })
-        console.log('handleChange', this.state)
      
         
     }
