@@ -9,7 +9,7 @@ const DisplayCategories = (props) => {
             <ul>
             <MapCategoryData props={props} />
             </ul>
-        <button onClick={props.getCategories}>Click to get the categories</button>
+        {/* <button onClick={props.getCategories}>Click to get the categories</button> */}
         </div> 
     );
 }
