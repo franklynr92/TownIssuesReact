@@ -71,7 +71,7 @@ class Issue extends React.Component {
 }
 
 const mapStateToProps = (state) => {
-    console.log(" issue msp", state.issues)
+    console.log(" issue msp", state.issues, state.categories)
     return {
         boundIssuesData: state.issues,
         boundCategoriesData: state.categories
