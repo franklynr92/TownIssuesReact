@@ -32,7 +32,7 @@ class Issue extends React.Component {
         console.log('handlesubmit after issue created', issue)
         console.log(this.props)
         debugger;
-        this.props.submitIssue(issue)
+        this.props.boundSubmitIssue(issue)
         this.setState({  
         title: '',
         description: '',
@@ -50,12 +50,12 @@ class Issue extends React.Component {
               <h1>This is my Issue Component</h1>
               <DisplayIssues
               issuesData={this.props.issuesData} 
-              getIssues={this.props.fetchIssues}
+              getIssues={this.props.boundFetchIssues}
               />
               <IssuesForm 
               issueData={this.state}
-              getIssueCategories={this.props.fetchCategories}
-              categoriesData={this.props.categoriesData}
+              getIssueCategories={this.props.boundFetchCategories}
+              categoriesData={this.props.boundCategoriesData}
               handleChange={this.handleChange}
               handleSubmit={this.handleSubmit}
               />
@@ -74,9 +74,9 @@ const mapStateToProps = (state) => {
 
 const mapDispatchToProps = dispatch => {
     return {
-        fetchIssues: () => dispatch(fetchIssues()),
-        fetchCategories: () => dispatch(fetchCategories()),
-        submitIssue: (issue) => dispatch(submitIssueFetch(issue))
+        boundFetchIssues: () => dispatch(fetchIssues()),
+        boundFetchCategories: () => dispatch(fetchCategories()),
+        boundSubmitIssue: (issue) => dispatch(submitIssueFetch(issue))
     }
 }
 export default connect(mapStateToProps, mapDispatchToProps)(Issue);
