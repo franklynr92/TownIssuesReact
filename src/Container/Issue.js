@@ -45,7 +45,7 @@ class Issue extends React.Component {
     }
 
     componentDidMount(){
-        
+        console.log("component did mount", this.props)
         
     }
 
