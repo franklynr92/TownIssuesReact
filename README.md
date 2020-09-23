@@ -16,3 +16,25 @@ resolved button
 Users will also be able to view data in colorful format
 Users will be able to upload images as well
 
+Some of the views and flow of what I would like to implement in the future are:
+![Alt text] (.images/TownIssuesReactCopy.jpg)
+<img src=".images/TownIssuesReactCopy.jpg">
+
+![Alt text] (.images/TownIssuesSvg/TownIssuesReactWireFrame_Category display.svg)
+<img src=".images/TownIssuesSvg/TownIssuesReactWireFrame_Category display.svg">
+
+
+![Alt text] (.images/TownIssuesSvg/TownIssuesReactWireFrame_Categoy Creation.svg)
+<img src=".images/TownIssuesSvg/TownIssuesReactWireFrame_Categoy Creation.svg">
+
+
+![Alt text] (./images/TownIssuesSvg/TownIssuesReactWireFrame_Category display.svg)
+<img src=".images/TownIssuesSvg/TownIssuesReactWireFrame_Category display.svg">
+
+
+![Alt text] (images/TownIssuesSvg/TownIssuesReactWireFrame_Category display.svg)
+<img src=".images/TownIssuesSvg/TownIssuesReactWireFrame_Category display.svg">
+
+
+![Alt text] (images/TownIssuesSvg/TownIssuesReactWireFrame_Category display.svg)
+<img src=".images/TownIssuesSvg/TownIssuesReactWireFrame_Category display.svg">
