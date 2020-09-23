@@ -28,5 +28,5 @@ const reducer = (state = { categories: [], issues: []}, action) => {
     }
 }
 
-
+//objects and arrays are passed by reference not by value
 export default reducer;
