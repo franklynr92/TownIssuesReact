@@ -24,17 +24,20 @@ Some of the views and flow of what I would like to implement in the future are:
 <img src="https://raw.githubusercontent.com/franklynr92/TownIssuesReact/master/images/TownIssuesSvg/TownIssuesReactWireFrame_Category%20display.svg">
 
 
-![Alt text] (https://raw.githubusercontent.com/franklynr92/TownIssuesReact/master/images/TownIssuesSvg/TownIssuesReactWireFrame_Categoy%20Creation.svg)
-<img src="https://raw.githubusercontent.com/franklynr92/TownIssuesReact/master/images/TownIssuesSvg/TownIssuesReactWireFrame_Categoy%20Creation.svg">
+![Alt text] (https://raw.githubusercontent.com/franklynr92/TownIssuesReact/master/images/TownIssuesSvg/TownIssuesReactWireFrame_Display%20Issues%20by%20Category.svg)
+<img src="https://raw.githubusercontent.com/franklynr92/TownIssuesReact/master/images/TownIssuesSvg/TownIssuesReactWireFrame_Display%20Issues%20by%20Category.svg">
 
 
-![Alt text] (./images/TownIssuesSvg/TownIssuesReactWireFrame_Category display.svg)
-<img src=".images/TownIssuesSvg/TownIssuesReactWireFrame_Category display.svg">
+![Alt text] (https://raw.githubusercontent.com/franklynr92/TownIssuesReact/master/images/TownIssuesSvg/TownIssuesReactWireFrame_Home%20Page.svg)
+<img src="https://raw.githubusercontent.com/franklynr92/TownIssuesReact/master/images/TownIssuesSvg/TownIssuesReactWireFrame_Home%20Page.svg">
 
 
-![Alt text] (images/TownIssuesSvg/TownIssuesReactWireFrame_Category display.svg)
-<img src=".images/TownIssuesSvg/TownIssuesReactWireFrame_Category display.svg">
+![Alt text] (https://raw.githubusercontent.com/franklynr92/TownIssuesReact/master/images/TownIssuesSvg/TownIssuesReactWireFrame_Issue%20creation.svg)
+<img src="https://raw.githubusercontent.com/franklynr92/TownIssuesReact/master/images/TownIssuesSvg/TownIssuesReactWireFrame_Issue%20creation.svg">
 
 
-![Alt text] (images/TownIssuesSvg/TownIssuesReactWireFrame_Category display.svg)
-<img src=".images/TownIssuesSvg/TownIssuesReactWireFrame_Category display.svg">
+![Alt text] (https://raw.githubusercontent.com/franklynr92/TownIssuesReact/master/images/TownIssuesSvg/TownIssuesReactWireFrame_Resolved%20Issues.svg)
+<img src="https://raw.githubusercontent.com/franklynr92/TownIssuesReact/master/images/TownIssuesSvg/TownIssuesReactWireFrame_Resolved%20Issues.svg">
+
+![Alt text] (https://raw.githubusercontent.com/franklynr92/TownIssuesReact/master/images/TownIssuesSvg/TownIssuesReactWireFrame_Unresolved%20Issues.svg)
+<img src="https://raw.githubusercontent.com/franklynr92/TownIssuesReact/master/images/TownIssuesSvg/TownIssuesReactWireFrame_Unresolved%20Issues.svg">
