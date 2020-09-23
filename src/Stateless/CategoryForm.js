@@ -22,3 +22,6 @@ const CategoryForm = (props) => {
 }
  
 export default CategoryForm;
+//arrow defines
+//write another blog about this keyword, arrow functions, classic functions
+//employ component lifecycles methods, componentDidMount , when application loads the categories and issues are fetched immediately 
