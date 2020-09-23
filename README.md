@@ -20,8 +20,8 @@ Some of the views and flow of what I would like to implement in the future are:
 ![Alt text] (.images/TownIssuesReactCopy.jpg)
 <img src="https://github.com/franklynr92/TownIssuesReact/blob/master/images/TownIssuesReactCopy.jpg">
 
-![Alt text] (.images/TownIssuesSvg/TownIssuesReactWireFrame_Category display.svg)
-<img src=".images/TownIssuesSvg/TownIssuesReactWireFrame_Category display.svg">
+![Alt text] (https://raw.githubusercontent.com/franklynr92/TownIssuesReact/master/images/TownIssuesSvg/TownIssuesReactWireFrame_Category%20display.svg)
+<img src="https://raw.githubusercontent.com/franklynr92/TownIssuesReact/master/images/TownIssuesSvg/TownIssuesReactWireFrame_Category%20display.svg">
 
 
 ![Alt text] (.images/TownIssuesSvg/TownIssuesReactWireFrame_Categoy Creation.svg)
