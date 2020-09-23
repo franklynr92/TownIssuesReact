@@ -13,12 +13,10 @@ state = {
 
     
     handleChange = event => {
-        
+        console.log("handlechange", this)
         this.setState({
             type_of_issue: event.target.value
         })
-     
-        
     }
 
     handleSubmit = event => {
@@ -78,3 +76,4 @@ const mapDispatchToProps = dispatch => {
 
 export default connect(mapStateToProps, mapDispatchToProps)(Category)
 //remember to push to heroku master []
+//setState is async use prevState to make the change you want
