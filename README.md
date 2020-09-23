@@ -18,7 +18,7 @@ Users will be able to upload images as well
 
 Some of the views and flow of what I would like to implement in the future are:
 ![Alt text] (.images/TownIssuesReactCopy.jpg)
-<img src=".images/TownIssuesReactCopy.jpg">
+<img src="https://github.com/franklynr92/TownIssuesReact/blob/master/images/TownIssuesReactCopy.jpg">
 
 ![Alt text] (.images/TownIssuesSvg/TownIssuesReactWireFrame_Category display.svg)
 <img src=".images/TownIssuesSvg/TownIssuesReactWireFrame_Category display.svg">
